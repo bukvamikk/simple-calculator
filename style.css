@@ -4,10 +4,17 @@
   background-color: #e5e3e0;
   border-radius: 6px;
   font-family: sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #result {
   height: 120px;
+  color: #5b5f6b;
 }
 
 #keyboard {
@@ -20,7 +27,7 @@
   margin: 0 20px;
   padding-top: 20px;
   font-size: 15px;
-  color: #919191;
+  color: #6b675b;
 }
 
 #output {
@@ -42,6 +49,28 @@
   border-width: 0;
 }
 
+.operator,
+.number {
+  cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+  font-size: 60%;
+}
+
 .empty {
   background-color: #e5e3e0;
+}
+
+button:nth-child(4n + 0) {
+  font-size: 110%;
+  background-color: #5b5f6b;
+  color: #fff;
+}
+
+button:nth-child(-n + 3) {
+  font-size: 110%;
+  background-color: #9b9faa;
+  color: #fff;
 }
